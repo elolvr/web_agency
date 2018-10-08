@@ -1,0 +1,126 @@
+@font-face
+{   
+    font-family:'fontawesome-webfont';
+    src:    url('Webagency_images/fonts/fontawesome-webfont.eot') format('eot'),
+            url('Webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+            url('Webagency_images/fonts/fontawesome-webfont.svg') format('svg'),            
+            url('Webagency_images/fonts/fontawesome-webfont.ttf') format('truetype');
+    
+    font-family: 'glyphicons-halflings-regular';
+    src:    url('Webagency_images/fonts/glyphicons-halflings-regular.eot') format('eot'),
+            url('Webagency_images/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+            url('Webagency_images/fonts/glyphicons-halflings-regular.svg') format('svg'),
+            url('Webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff');
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header
+{
+    width: 100%;
+    background: url(webagency_images/images/slider/bg1.jpg) no-repeat center;
+    background-size: 100%;
+    padding: 8% 0% 14% 9%;
+    font-family: 'fontawesome-webfont', fantasy;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 3px blue solid;
+}
+
+.logo
+{
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 9% 1% 9%;
+}
+
+.link
+{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus_dinfos
+{
+    background-color: #6BCAF2;
+    padding: 0.7%;
+    margin-top: 20px;
+    
+}
+
+.intro_1
+{
+    align-self: center;
+    text-align: center;
+    height: 70%;
+    
+}
+
+.nos_services
+{
+    background-image: url(webagency_images/images/main-feature.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left;
+    background-color: #F7F7F7;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: 'glyphicons-halflings-regular';
+    color: grey;
+    border: 2px pink solid;
+}
+
+.ux_design
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 3px orange solid;
+    margin-top: 2%;
+    width: 50%;
+}
+
+h2
+{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: black;
+}
+
+.nos_services h1
+{
+    color: black;
+}
+
+strong
+{
+  font-weight: 550;
+    color: #6BCAF2;
+}
+
+a
+{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.logo a
+{
+    color: grey;
+}
