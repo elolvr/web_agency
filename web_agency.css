@@ -13,50 +13,59 @@
             url('Webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff');
 }
 
-body
+#PageWrapper
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    width: 89%;
-}
-
-header
-{
-    width: 100%;
-    margin-top: 6%;
-    background: url(webagency_images/images/slider/bg1.jpg)no-repeat top;
-    background-size: contain;
-    font-family: sans-serif;
-    padding: 13% 0% 11% 12%;
-    color: white;
-    font-weight: 900;
-    font-size: 0.8em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
 }
 
 .menu
 {
     position: fixed;
-    background-color: white;
-    width: 86%;
-    height: auto;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    background-color: RED;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_container
+{
+    width: 50%;
+}
+
+ul
+{
+    width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 14%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    font-size: 1.1em;
+    list-style: none;
+    font-size: 1.2em;
 }
 
-.menu img
+li
 {
-    max-width: 18%;
-    height: auto;
-    position: absolute;
-    left: 10%;
-    top: 15%;
+    padding: 5%;
+    border-top: blue 2px solid;
+}
+
+header
+{
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 5%;
+    background: url(webagency_images/images/slider/bg1.jpg)no-repeat top;
+    background-size: 100% 100%;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 0.8em;
+    border: 3px solid blue;
 }
 
 .plus_dinfos
