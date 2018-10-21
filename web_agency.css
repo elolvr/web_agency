@@ -13,59 +13,61 @@
             url('Webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff');
 }
 
-#PageWrapper
+#page_wrapper
 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu
 {
     position: fixed;
     top: 0%;
-    left: 5%;
-    width: 90%;
-    background-color: RED;
+    background-color: white;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.1em;
 }
 
 .img_container
 {
     width: 50%;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 
 ul
 {
-    width: 30%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 8%;
     list-style: none;
-    font-size: 1.2em;
 }
 
-li
+li a:hover
 {
-    padding: 5%;
-    border-top: blue 2px solid;
+    border-top: 3px solid #6BCAF2;
+    padding-top: 35%;
 }
 
 header
 {
     width: 100%;
-    margin-top: 8%;
-    padding-left: 5%;
+    margin-top: 6%;
     background: url(webagency_images/images/slider/bg1.jpg)no-repeat top;
-    background-size: 100% 100%;
+    background-size: contain;
     font-family: sans-serif;
+    padding: 13% 0% 11% 12%;
     color: white;
     font-weight: 900;
     font-size: 0.8em;
-    border: 3px solid blue;
 }
 
 .plus_dinfos
@@ -75,9 +77,10 @@ header
     padding: 0.7%;
     margin-top: 2%;
     text-align: center;
+    color: white;
 }
 
-.intro_services
+.intro_section
 {
     align-self: center;
     text-align: center;
@@ -102,54 +105,13 @@ header
     font-family: sans-serif;
 }
 
-.ux_design
+.paragraphes_services
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1%;
     width: 54%;
-}
-
-.ui_design
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1%;
-    width: 54%;
-}
-
-.seo
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1%;
-    width: 54%;
-}
-
-.nos_projets
-{
-    background-color: #F7F7F7;
-    width: 90%;
-    margin-top: 2%;
-    text-align: center;
-    color: grey;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.link
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: 4%;
 }
 
 .portfolio
@@ -181,11 +143,6 @@ h2
     font-size: 1.3em;
 }
 
-h4
-{
-    margin: 1%;
-}
-
 strong
 {
     color: #6BCAF2;
@@ -195,28 +152,12 @@ a
 {
     font-weight: 700;
     text-decoration: none;
+    color: grey;
+}
+
+.plus_dinfos a
+{
+    font-weight: 700;
+    text-decoration: none;
     color: white;
 }
-
-a:hover
-{
-    text-decoration: overline #6BCAF2;
-}
-
-.menu a
-{
-    color: grey;
-}
-
-.nos_projets a
-{
-    color: grey;
-}
-
-.link h4
-{
-    display: block;
-    padding: 3%;
-    background-color: #E6E7E8;    
-}
-
