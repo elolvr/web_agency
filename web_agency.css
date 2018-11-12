@@ -67,7 +67,7 @@ li a:hover
     font-family: sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 0.8vw;
+    font-size: 1vw;
     border: 2px red solid;
     display: flex;
     justify-content: center;
@@ -100,14 +100,14 @@ li a:hover
     border-radius: 50%;
     border: 1px solid green;
     position: relative;
-    background: black;
-    opacity: 0.3;
+    background: #0e0d0d4d;
+   
 }
 
 .button_arrow-left i
 {
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 18%;
     font-size: 230%;
     
@@ -121,14 +121,14 @@ li a:hover
     border-radius: 50%;
     border: 1px solid green;
     position: relative;
-    background: black;
-    opacity: 0.3;
+    background: #0e0d0d4d;
+
 }
 
 .button_arrow-right i
 {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 18%;
     font-size: 230%;
     color: white;
@@ -213,9 +213,9 @@ li a:hover
 .i_content
 {
     border: 1px solid #D7DADB;
-    width: 10%;
-    height: 60%;
-    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,7 +247,7 @@ li a:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    margin: 4% 0% 4% 0%;
 }
 
 .projets-container li
@@ -260,16 +260,20 @@ li a:hover
     color: dimgray;
     background-color: #DEDEDE;
     position: relative;
-    border: 1px solid black;
+}
+
+.projets-container li:hover > .bottom_arrow
+{
+    opacity: 1;
 }
 
 .projets-container li:hover
 {
     background-color: #6BCAF2;
-    box-shadow: 2% 1% 1% blue;
+    box-shadow: 0px 2px 1px #047DD4;
 }
 
-.projets-container a:hover
+.projets-container li:hover > a
 {
     border-top: none;
     color: white;
@@ -278,8 +282,9 @@ li a:hover
 .bottom_arrow
 {
     position: absolute;
-    top: 82%;
-    left: 45%;
+    top: 80%;
+    left: 43%;
+    opacity: 0;
     
 }
 
@@ -311,9 +316,90 @@ li a:hover
     width: 22%;
 }
 
+footer
+{
+    width: 100%;
+    height: 600px;
+    margin-top: 4%;
+    position: relative;
+}
+
+.blue_film
+{
+    width: 100%;
+    height: 100%;
+    background-color: #009dff33;
+    position: absolute;
+    top: 0%;
+    pointer-events: none;
+}
+
+iframe
+{
+    width: 100%;
+    height: 100%;
+}
+
+form
+{
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    width: 23%;
+    height: 80%;
+    font-size: 1vw;
+    background-color: #ffffffb3;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0% 0% 1% 1%;
+    border: 2px solid red;
+}
+
+.send_message
+{
+    width: 40%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 0.8vw;
+    color: white;
+    font-weight: bold;
+    background-color: #6BCAF2;
+}
+
+form p
+{
+    width: 90%;
+}
+
+input
+{
+    width: 100%;
+}
+
+textarea
+{
+    width: 100%;
+    height: 100px;
+}
+
+em
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
 img
 {
     width: 100%;
+}
+h4
+{
+    font-size: 1.1vw;
+    font-weight: bold;
+    font-family: 'glyphicons-halflings-regular';
 }
 
 h3
@@ -321,13 +407,21 @@ h3
     font-size: 1.2vw;
     font-family: sans-serif;
     color: black;
+    font-family: 'glyphicons-halflings-regular';
 }
 
 h2
 {
     color: black;
     font-size: 1.8vw;
-    font-family: sans-serif;
+    font-family: 'glyphicons-halflings-regular';
+    
+}
+
+h1
+{
+    font-family: 'glyphicons-halflings-regular';
+    font-size: 1.8vw;
 }
 
 strong
@@ -337,7 +431,8 @@ strong
 
 p
 {
-    font-size: 0.7vw;
+    font-size: 0.9vw;
+    font-family: 'fontawesome-webfont';
 }
 
 a
