@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="web_agency.css"/>
         <link rel="stylesheet" media="all and (max-width: 1024px)" href="small_screen.css"/>
+        <link rel="stylesheet" media="all and (max-width: 2880px)" href="medium_screen.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <title>WEB AGENCY</title>
     </head>
@@ -19,12 +20,12 @@
                  	<li><a href="#accueil">Accueil</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#porte_folio">Portfolio</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                  </ul>
             </div>
         
     
-        <div class="slider-container">
+        <div id="accueil" class="slider-container">
             <div class="slider-container_img">
                 <img src="webagency_images/images/slider/bg1.jpg" alt="slider">
             </div>
@@ -46,12 +47,14 @@
         </div>
         
    
-        <section class="services-container">
+        <section id="services" class="services-container">
             
            <div class="services-container_title">
                <h2>NOS SERVICES</h2>
-               <i class="fas fa-circle" style="font-size: 1vw; color: #6BCAF2;"></i>
-               <p>WEBAGENCY s'engage à offrir ses services xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, tel que :</p>
+               <div class="point_container">
+                    <i class="fas fa-circle"></i>
+               </div>
+                    <p>Nous pouvons offrir à votre société une gamme complète de services – UX design, UI design, SEO, conseils et retours d'expériences. Nous cherchons à offrir à votre entreprise la meilleure solution dans chaque domaine.</p>
             </div>
            
             <div class="services-container_content">
@@ -64,9 +67,9 @@
                 
                 <div class="li_container">
                     <div class="i_content">
-                        <i class="fas fa-chart-line fa-lg" style="font-size: 2vw; color: #6BCAF2;"></i>
+                        <i class="fas fa-chart-line fa-lg"></i>
                          <div class="i_content-point">
-                        <i class="fas fa-circle" style="font-size: 0.8vw; color: #6BCAF2;"></i>
+                        <i class="fas fa-circle"></i>
                         </div>
                     </div>
                     <div class="services_container-txt">
@@ -77,9 +80,9 @@
                 
                 <div class="li_container">
                     <div class="i_content">
-                        <i class="fas fa-cubes" style="font-size: 2vw; color: #6BCAF2;"></i>
+                        <i class="fas fa-cubes"></i>
                          <div class="i_content-point">
-                        <i class="fas fa-circle" style="font-size: 0.8vw; color: #6BCAF2;"></i>
+                        <i class="fas fa-circle" ></i>
                         </div>
                     </div>
                     <div class="services_container-txt">
@@ -90,9 +93,9 @@
                 
                 <div class="li_container">
                     <div class="i_content">
-                        <i class="fas fa-chart-pie" style="font-size: 2vw; color: #6BCAF2;"></i>
+                        <i class="fas fa-chart-pie"></i>
                         <div class="i_content-point">
-                        <i class="fas fa-circle" style="font-size: 0.8vw; color: #6BCAF2;"></i>
+                        <i class="fas fa-circle"></i>
                         </div>
                     </div>
                     
@@ -105,29 +108,31 @@
             </div> 
         </section>
         
-        <section class="projets-container">
+        <section id="porte_folio" class="projets-container">
             
           <div class="projets-container_title">
                <h2>NOS PROJETS</h2>
-               <i class="fas fa-circle" style="font-size: 1vw; color: #6BCAF2;"></i>
-               <p>Voici quelques un des projets que nous avons réalisé :</p>
+               <div class="point_container">
+                    <i class="fas fa-circle"></i>
+               </div>
+               <p>Venez découvrir tous nos projets en cours ou passés !</p>
           </div>
             
              <ul>
                 <li>
                     <a href="acc">All Works</a>
-                    <div class="bottom_arrow"><i class="fas fa-caret-down" style="font-size: 1.7vw; color: #047DD4;"></i></div>
+                    <div class="bottom_arrow"><i class="fas fa-caret-down"></i></div>
                 </li>
                 <li><a href="acc">Creative</a>
-                    <div class="bottom_arrow"><i style="font-size: 1.7vw; color: #047DD4" class="fas fa-caret-down"></i></div>
+                    <div class="bottom_arrow"><i class="fas fa-caret-down"></i></div>
                 </li>
                 <li>
                     <a href="acc">Corporate</a>
-                    <div class="bottom_arrow"><i class="fas fa-caret-down" style="font-size: 1.7vw; color: #047DD4;"></i></div>
+                    <div class="bottom_arrow"><i class="fas fa-caret-down"></i></div>
                 </li>
                 <li>
                     <a href="acc">Portfolio</a>
-                    <div class="bottom_arrow"><i class="fas fa-caret-down" style="font-size: 1.7vw; color: #047DD4;"></i></div>
+                    <div class="bottom_arrow"><i class="fas fa-caret-down"></i></div>
                 </li>
              </ul>
           
@@ -135,22 +140,61 @@
                 
              <div class="portfolio">
                 <div class="portfolio_serie1">
-                    <img src="webagency_images/images/portfolio/01.jpg" alt="Projet 1" />
-                    <img src="webagency_images/images/portfolio/02.jpg" alt="Projet 2" />
-                    <img src="webagency_images/images/portfolio/03.jpg" alt="Projet 3" />
-                    <img src="webagency_images/images/portfolio/04.jpg" alt="Projet 4" />
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/01.jpg" alt="Projet 1" />
+                        <div class="img_link"><p>Portfolio Item 1</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div> 
+                    
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/02.jpg" alt="Projet 2" />
+                        <div class="img_link"><p>Portfolio Item 2</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
+                    
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/03.jpg" alt="Projet 3" />
+                        <div class="img_link"><p>Portfolio Item 3</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
+                    
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/04.jpg" alt="Projet 4" />
+                        <div class="img_link"><p>Portfolio Item 4</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
                 </div>
+                 
                 <div class="portfolio_serie2">
-                    <img src="webagency_images/images/portfolio/05.jpg" alt="Projet 5" />
-                    <img src="webagency_images/images/portfolio/06.jpg" alt="Projet 6" />
-                    <img src="webagency_images/images/portfolio/07.jpg" alt="Projet 7" />
-                    <img src="webagency_images/images/portfolio/08.jpg" alt="Projet 8" />
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/05.jpg" alt="Projet 5" />
+                        <div class="img_link"><p>Portfolio Item 5</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
+                    
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/06.jpg" alt="Projet 6" />
+                        <div class="img_link"><p>Portfolio Item 6</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
+                        
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/07.jpg" alt="Projet 7" />
+                        <div class="img_link"><p>Portfolio Item 7</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
+                        
+                    <div class="image">
+                        <img src="webagency_images/images/portfolio/08.jpg" alt="Projet 8" />
+                        <div class="img_link"><p>Portfolio Item 8</p></div>
+                        <div class="eye_container"><i class="far fa-eye"></i></div>
+                    </div>
                 </div>
-             </div>
+            </div>
         
-        </section>
+            </section>
             
-        <footer>
+        <footer id="contact">
         
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080452!2d2.347636915894329!3d48.87305530762775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1541715287982">
             </iframe>

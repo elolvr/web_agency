@@ -17,12 +17,13 @@ body
 
 #page_wrapper
 {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     border: 2px black solid;
 }
 
@@ -35,38 +36,39 @@ body
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.1vw;
     border: 2px red solid;
     z-index: 5;
 }
 
 .img_container
 {
-    width: 12%;
-    border: 2px yellow solid;
+    display: none;
 }
 
 .menu ul
 {
     display: flex;
-    justify-content: space-between;
-    width: 24%;
+    justify-content: space-around;
+    width: 100%;
     list-style: none;
     font-weight: bold;
+    font-size: 1.6vw;
     border: 3px blue solid;
 }
 
-li a:hover
+.menu a:hover
 {
-    border-top: 3px solid #6BCAF2;
-    padding-top: 25%;
+    background-color: #6BCAF2;
+    padding: 10% 8% 10% 8%;
+    border-radius: 30%;
+    color: white;
 }
 
 .slider-container
 {
     width: 100%;
     position: relative;
-    margin-top: 4%;
+    margin-top: 5%;
     color: white;
     border: 2px red solid;
     display: flex;
@@ -141,6 +143,7 @@ li a:hover
     left: 8%;   
     border: 2px green solid;
     font-family: 'roboto-bold';
+    font-size: 1vw;
 }
 
 .bouton
@@ -165,12 +168,13 @@ li a:hover
     flex-direction: column;
     align-items: center;
     border: 3px solid pink;
-    background: white;
+    background: #fbf3fa;
+    position: relative;
 } 
 
 .services-container_title
 {
-    width: 60%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,13 +187,13 @@ li a:hover
 .point_container
 {
     border: 1px solid gray;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background: white;
 }
 
 .point_container i
@@ -197,24 +201,20 @@ li a:hover
     font-size: 1vw;
     color: #4EAED6;
 }
-.services-container_content
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px purple solid;
-}
 
 .computer_container
 {
-    width: 35%;
-    border: 2px solid yellow;
+    position: absolute;
+    right: 2%;
+    width: 75%;
+    opacity: 0.2;
+    
 }
 
 .ul_container
 {
     border: 2px solid blue;
-    width: 40%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -226,27 +226,28 @@ li a:hover
     border: 1px solid orange;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    justify-content: space-around;
+    align-items: center; 
 }
 
 .services_container-txt
 {
     width: 85%;
     color: gray;
+    text-align: justify;
 }
 .i_content
 {
     border: 1px solid #D7DADB;
-    width: 55px;
-    height: 55px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #4EAED6;
 }
 
@@ -265,12 +266,12 @@ li a:hover
     flex-direction: column;
     align-items: center;
     border: 3px solid pink;
-    background: white;
+    background: #fbf3fa;
 }
 
 .projets-container_title
 {
-    width: 60%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,7 +291,7 @@ li a:hover
 
 .projets-container li
 {
-    width: 7%;
+    width: 20%;
     padding: 1% 0% 1% 0%;
     list-style: none;
     text-align: center;
@@ -378,8 +379,8 @@ li a:hover
 
 .eye_container
 {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -493,7 +494,7 @@ h4
 
 h3
 {
-    font-size: 1.1vw;
+    font-size: 1.6vw;
     font-family: 'roboto-bold';
     color: black;
 }
@@ -501,7 +502,7 @@ h3
 h2
 {
     color: black;
-    font-size: 1.8vw;   
+    font-size: 2vw;   
     font-family: 'roboto-bold';
 }
 
@@ -522,3 +523,7 @@ a
     color: grey;
 }
 
+p
+{
+    font-size: 1.4vw;
+}
